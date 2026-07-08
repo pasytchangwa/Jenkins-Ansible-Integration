@@ -17,8 +17,8 @@ pipeline {
                     credentialsId: 'JenkinsAnsible',
                     disableHostKeyChecking: false,
                     installation: 'AnsibleDemo',
-                    inventory: '/var/lib/jenkins/workspace/JenkinsAnsibleIntegration/AnsibleDemo/Inventory.yaml',
-                    playbook: '/var/lib/jenkins/workspace/JenkinsAnsibleIntegration/AnsibleDemo/install_nginx_PB.yml',
+                    inventory: "${WORKSPACE}/AnsibleDemo/Inventory.yaml",
+                    playbook: "${WORKSPACE}/AnsibleDemo/install_nginx_PB.yml",
                     vaultTmpPath: ''
                 )
             }
