@@ -1,0 +1,20 @@
+---
+- name: Webserver Setup
+  hosts: servers
+  become: yes
+
+  tasks:
+    - name: Update apt package cache
+      ansible.builtin.apt:
+        update_cache: yes
+
+    - name: Install Apache2
+      ansible.builtin.apt:
+        name: apache2
+        state: present
+
+    - name: Start and enable Apache2 service
+      ansible.builtin.service:
+        name: apache2
+        state: started
+        enabled: yes
