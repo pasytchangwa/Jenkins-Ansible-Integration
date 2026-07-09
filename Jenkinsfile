@@ -17,7 +17,7 @@ pipeline {
                     credentialsId: 'JenkinAnsible',
                     disableHostKeyChecking: false,
                     installation: 'Ansible',
-                    inventory: "${WORKSPACE}/AnsibleDemo/Inventory.yaml",
+                    inventory: "${WORKSPACE}/AnsibleDemo/Inventory2.yaml",
                     playbook: "${WORKSPACE}/AnsibleDemo/web-md.yaml",
                     vaultTmpPath: ''
                 )
