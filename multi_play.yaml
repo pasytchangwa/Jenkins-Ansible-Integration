@@ -1,0 +1,20 @@
+---
+- name: Webserver Setup
+  hosts: webservers
+  become: yes
+
+  tasks:
+    - name: Install Apache
+      ansible.builtin.apt:
+        name: httpd
+        state: present
+
+- name: Database Server Setup
+  hosts: dbservers
+  become: yes
+
+  tasks:
+    - name: Install MariaDB
+      ansible.builtin.apt:
+        name: mariadb-server
+        state: present
