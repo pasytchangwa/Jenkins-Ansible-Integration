@@ -18,7 +18,7 @@ pipeline {
                     disableHostKeyChecking: false,
                     installation: 'Ansible',
                     inventory: "${WORKSPACE}/AnsibleDemo/Inventory.yaml",
-                    playbook: "${WORKSPACE}/AnsibleDemo/install_nginx_PB.yml",
+                    playbook: "${WORKSPACE}/AnsibleDemo/web-md.yaml",
                     vaultTmpPath: ''
                 )
             }
