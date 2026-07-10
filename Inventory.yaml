@@ -8,6 +8,6 @@ all:
     servers:
       hosts:
         server1:
-          ansible_host: 172.31.24.27
+          ansible_host: 172.31.6.54
         server2:
-          ansible_host: 172.31.23.125
+          ansible_host: 172.31.6.86
