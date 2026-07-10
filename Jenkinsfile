@@ -6,7 +6,7 @@ pipeline {
           stage('Checkout') {
             steps {
                 dir('AnsibleDemo') {
-                    git branch: 'main', url: 'https://github.com/Urmilaa/Jenkins-Ansible-Integration'
+                    git branch: 'main', url: 'https://github.com/pasytchangwa/Jenkins-Ansible-Integration'
                 }
             }
         }
