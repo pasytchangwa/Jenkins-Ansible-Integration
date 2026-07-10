@@ -14,7 +14,7 @@ pipeline {
         stage('Execute playbook') {           
             steps {          
                 ansiblePlaybook(
-                    credentialsId: 'JenkinAnsible',
+                    credentialsId: 'JenkinsAnsible',
                     disableHostKeyChecking: false,
                     installation: 'Ansible',
                     inventory: "${WORKSPACE}/AnsibleDemo/Inventory.yaml",
